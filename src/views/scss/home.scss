@@ -1,0 +1,133 @@
+.home-view {
+    padding-bottom: 192px;
+
+    h2 {
+        text-align: center;
+        font-size: 108px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 116px;
+        text-transform: uppercase;
+        max-width: 1728px;
+    }
+
+    .first-header {
+        margin-top: 287px;
+        margin-bottom: 333px;
+    }
+
+    .second-header {
+        margin-top: 267px;
+        margin-bottom: 269px;
+    }
+
+    .third-header {
+        margin-top: 271px;
+        margin-bottom: 67px;
+    }
+
+    .sponsors {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        overflow: hidden;
+
+        .small-group, .big-group {
+            width: 2266px;
+            transform: translateX(-217.5px);
+            display: flex;
+            gap: 16px;
+
+            .group-item {
+                width: 310px;
+                height: 224px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .big-group {
+            width: 2592px;
+            transform: translateX(-380.5px);
+        }
+    }
+
+    .auth-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        fieldset {
+            border: none;
+
+            legend {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+            }
+
+            input {
+                margin-top: 14px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100%;
+                border: none;
+                padding: 22px 0 24px 24px;
+                width: 512px;
+                margin-bottom: 34px;
+                color: var(--white);
+
+                &:focus-visible {
+                    outline: none;
+                }
+
+                &:focus ~ .placeholder-icon,
+                &:not(:placeholder-shown) ~ .placeholder-icon {
+                    display: none;
+                }
+
+
+            }
+
+            label {
+                position: relative;
+
+                .placeholder-icon {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 16px;
+                    top: 2px;
+                    left: 24px;
+                    background: url("@/assets/images/svg/dotes.svg") no-repeat;
+                    pointer-events: none;
+                }
+
+            }
+
+        }
+
+        .submit {
+            background: var(--blue);
+            color: var(--white);
+            text-align: center;
+            width: 224px;
+            height: 224px;
+            border-radius: 50%;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 32px; /* 100% */
+            letter-spacing: -0.32px;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            margin-top: 22px;
+        }
+
+    }
+
+}

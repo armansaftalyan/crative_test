@@ -1,0 +1,29 @@
+nav {
+    padding: 24px 32px 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .logo {
+        color: var(--white);
+        font-family: var(--defalut-font);
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%;
+    }
+
+    .menu {
+        .menu-item {
+            width: 64px;
+            height: 64px;
+            background: #162635;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
